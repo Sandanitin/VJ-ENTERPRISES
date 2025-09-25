@@ -73,7 +73,7 @@ export default function Footer() {
             <span className="font-medium">Developed with</span>
             <span aria-hidden>❤️</span>
             <span className="font-medium">by</span>
-            <a href="https://www.maniora.in/" target="_blank" rel="noreferrer" className="font-medium underline-offset-2 hover:underline">Maniora Daggara</a>
+            <a href="https://www.maniora.in/" target="_blank" rel="noreferrer" className="font-medium underline-offset-2 hover:underline">Maniora</a>
           </span>
           <p className="mt-2 text-[11px] text-slate-500">
             © {new Date().getFullYear()} <a href="https://www.maniora.in/" target="_blank" rel="noreferrer" className="hover:text-primary-700">Maniora Daggara</a>
