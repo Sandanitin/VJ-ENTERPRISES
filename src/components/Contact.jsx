@@ -53,7 +53,7 @@ export default function Contact() {
               </span>
               <div>
                 <p className="text-sm font-semibold text-slate-800">Call us</p>
-                <a href="tel:+11234567890" className="text-sm text-slate-600 hover:text-primary-700">(123) 456-7890</a>
+                <a href="tel:9640161711" className="text-sm text-slate-600 hover:text-primary-700">9640161711</a>
               </div>
             </div>
             <div className="flex items-start gap-3 rounded-2xl border border-primary-100 bg-white p-5 shadow-sm ring-1 ring-black/[0.02]">
@@ -62,7 +62,7 @@ export default function Contact() {
               </span>
               <div>
                 <p className="text-sm font-semibold text-slate-800">Email</p>
-                <a href="mailto:hello@sunray.solar" className="text-sm text-slate-600 hover:text-primary-700">hello@sunray.solar</a>
+                <a href="mailto:vjenterprises@gmail.com" className="text-sm text-slate-600 hover:text-primary-700">vjenterprises@gmail.com</a>
               </div>
             </div>
             <div className="flex items-start gap-3 rounded-2xl border border-primary-100 bg-white p-5 shadow-sm ring-1 ring-black/[0.02]">
@@ -175,6 +175,42 @@ export default function Contact() {
           )}
         </div>
       </div>
+      <div className="mt-10 flex justify-center">
+        <a
+          href="https://wa.me/9640161711"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 rounded-lg bg-emerald-500 px-5 py-3 font-semibold text-white shadow-sm transition-colors duration-150 hover:bg-emerald-600"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="h-5 w-5"
+          >
+            <path d="M20.52 3.48A11.94 11.94 0 0012.06 0C5.46 0 .1 5.36.1 11.96c0 2.11.55 4.18 1.6 6.01L0 24l6.2-1.63a11.9 11.9 0 005.86 1.55h.01c6.6 0 11.96-5.36 11.96-11.96 0-3.2-1.25-6.21-3.51-8.48zM12.07 21.82h-.01c-1.87 0-3.7-.5-5.3-1.45l-.38-.23-3.68.97.98-3.58-.25-.37a9.86 9.86 0 01-1.53-5.22c0-5.46 4.45-9.9 9.92-9.9 2.65 0 5.14 1.03 7.01 2.9a9.85 9.85 0 012.9 7.01c0 5.46-4.45 9.9-9.92 9.9zm5.45-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.46-.15-.66.15-.2.3-.76.97-.93 1.17-.17.2-.34.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.74-1.64-2.04-.17-.3-.02-.47.13-.62.14-.14.3-.37.45-.56.15-.2.2-.34.3-.57.1-.23.05-.43-.02-.62-.07-.2-.66-1.6-.9-2.2-.24-.6-.48-.5-.66-.5l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.88 1.2 3.08.15.2 2.08 3.17 5.03 4.45.7.3 1.25.48 1.68.61.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.69.25-1.28.17-1.41-.08-.13-.27-.2-.57-.35z"/>
+          </svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+
+      {/* Floating WhatsApp button (bottom-right) */}
+      <a
+        href="https://wa.me/9640161711"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp"
+        className="fixed bottom-6 right-6 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-emerald-500 text-white shadow-lg transition-colors hover:bg-emerald-600"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          className="h-7 w-7"
+        >
+          <path d="M20.52 3.48A11.94 11.94 0 0012.06 0C5.46 0 .1 5.36.1 11.96c0 2.11.55 4.18 1.6 6.01L0 24l6.2-1.63a11.9 11.9 0 005.86 1.55h.01c6.6 0 11.96-5.36 11.96-11.96 0-3.2-1.25-6.21-3.51-8.48zM12.07 21.82h-.01c-1.87 0-3.7-.5-5.3-1.45l-.38-.23-3.68.97.98-3.58-.25-.37a9.86 9.86 0 01-1.53-5.22c0-5.46 4.45-9.9 9.92-9.9 2.65 0 5.14 1.03 7.01 2.9a9.85 9.85 0 012.9 7.01c0 5.46-4.45 9.9-9.92 9.9zm5.45-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.46-.15-.66.15-.2.3-.76.97-.93 1.17-.17.2-.34.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.74-1.64-2.04-.17-.3-.02-.47.13-.62.14-.14.3-.37.45-.56.15-.2.2-.34.3-.57.1-.23.05-.43-.02-.62-.07-.2-.66-1.6-.9-2.2-.24-.6-.48-.5-.66-.5l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.88 1.2 3.08.15.2 2.08 3.17 5.03 4.45.7.3 1.25.48 1.68.61.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.69.25-1.28.17-1.41-.08-.13-.27-.2-.57-.35z"/>
+        </svg>
+      </a>
     </section>
   )
 }

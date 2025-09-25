@@ -7,8 +7,8 @@ export default function Footer() {
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <img src="/favicon.svg" alt="SunRay Solar logo" className="h-7 w-7" />
-              <span className="font-semibold text-slate-800 text-lg">SunRay Solar</span>
+              <img src="/favicon.svg" alt="VJ ENTERPRISES logo" className="h-7 w-7" />
+              <span className="font-semibold text-slate-800 text-lg">VJ ENTERPRISES</span>
             </div>
             <p className="text-sm leading-6 text-slate-600">
               Clean, affordable solar solutions for homes and businesses. Design, installation,
@@ -30,7 +30,7 @@ export default function Footer() {
             <h4 className="text-sm font-semibold text-slate-700 tracking-wide">Contact</h4>
             <ul className="mt-4 space-y-3 text-sm text-slate-600">
               <li>
-                <a href="mailto:hello@sunraysolar.com" className="hover:text-primary-700">hello@sunraysolar.com</a>
+                <a href="mailto:vjenterprises@gmail.com" className="hover:text-primary-700">vjenterprises@gmail.com</a>
               </li>
               <li>
                 <a href="tel:+11234567890" className="hover:text-primary-700">+1 (123) 456-7890</a>
@@ -57,12 +57,24 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-slate-200 pt-6 text-xs text-slate-500 sm:flex-row">
-          <p>© {new Date().getFullYear()} SunRay Solar. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} VJ ENTERPRISES. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <a href="#" className="hover:text-primary-700">Privacy Policy</a>
             <span className="text-slate-300">|</span>
             <a href="#" className="hover:text-primary-700">Terms of Service</a>
           </div>
+        </div>
+
+        <div className="mt-6 flex items-center justify-center">
+          <span className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-leaf-500 to-primary-600 px-4 py-2 text-white shadow">
+            <span className="inline-flex h-4 w-4 items-center justify-center" aria-hidden>
+              <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4"><path d="M12 21s-6.716-4.364-9.428-7.076C.86 12.212.86 8.788 2.572 7.076a5 5 0 017.072 0L12 9.432l2.356-2.356a5 5 0 017.072 7.072C18.716 16.636 12 21 12 21z"/></svg>
+            </span>
+            <span className="font-medium">Developed with</span>
+            <span aria-hidden>❤️</span>
+            <span className="font-medium">by</span>
+            <span className="font-semibold">Maniora</span>
+          </span>
         </div>
       </div>
     </footer>

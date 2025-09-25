@@ -3,6 +3,7 @@ import React from 'react'
 const services = [
   { 
     title: 'Residential Installation',
+    image: '/images/solar1.jpg',
     icon: (
       <svg className="h-6 w-6 text-leaf-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>
     ),
@@ -10,6 +11,7 @@ const services = [
   },
   { 
     title: 'Commercial Installation',
+    image: '/images/solar2.jpg',
     icon: (
       <svg className="h-6 w-6 text-leaf-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><rect x="3" y="8" width="7" height="12"/><rect x="14" y="4" width="7" height="16"/><path d="M3 20h18"/></svg>
     ),
@@ -17,6 +19,7 @@ const services = [
   },
   { 
     title: 'Battery Storage',
+    image: '/images/solar3.jpg',
     icon: (
       <svg className="h-6 w-6 text-leaf-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><rect x="3" y="7" width="16" height="10" rx="2"/><path d="M21 10v4"/><path d="M10 10l-2 2h4l-2 2"/></svg>
     ),
@@ -24,6 +27,7 @@ const services = [
   },
   { 
     title: 'Maintenance & Monitoring',
+    image: '/images/solar4.jpg',
     icon: (
       <svg className="h-6 w-6 text-leaf-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M3 12a9 9 0 1 0 18 0"/><path d="M12 7v5l3 3"/></svg>
     ),
@@ -43,15 +47,20 @@ export default function Services() {
 
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {services.map(s => (
-            <article key={s.title} className="group rounded-xl border border-primary-100 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex items-center gap-3">
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary-50 ring-1 ring-primary-100">{s.icon}</span>
-                <h3 className="text-lg font-semibold text-slate-800">{s.title}</h3>
+            <article key={s.title} className="group rounded-xl border border-primary-100 bg-white shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+              <div className="relative aspect-[16/9] w-full bg-slate-100">
+                <img src={s.image} alt={`${s.title} illustration`} className="h-full w-full object-cover" loading="lazy" />
               </div>
-              <ul className="mt-4 space-y-2 text-sm text-slate-600 list-disc pl-5">
-                {s.points.map(p => (<li key={p}>{p}</li>))}
-              </ul>
-              <a href="#contact" className="mt-5 inline-flex items-center gap-2 text-primary-700 hover:text-primary-800 font-medium group-hover:underline">Talk to an expert →</a>
+              <div className="p-6">
+                <div className="flex items-center gap-3">
+                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary-50 ring-1 ring-primary-100">{s.icon}</span>
+                  <h3 className="text-lg font-semibold text-slate-800">{s.title}</h3>
+                </div>
+                <ul className="mt-4 space-y-2 text-sm text-slate-600 list-disc pl-5">
+                  {s.points.map(p => (<li key={p}>{p}</li>))}
+                </ul>
+                <a href="#contact" className="mt-5 inline-flex items-center gap-2 text-primary-700 hover:text-primary-800 font-medium group-hover:underline">Talk to an expert →</a>
+              </div>
             </article>
           ))}
         </div>
