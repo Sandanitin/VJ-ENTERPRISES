@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react'
 
 const links = [
   { href: '#home', label: 'Home' },
+  { href: '#products', label: 'Products' },
   { href: '#services', label: 'Services' },
+  { href: '#cart', label: 'Cart' },
   { href: '#testimonials', label: 'Testimonials' },
   { href: '#contact', label: 'Contact' },
 ]
 
-export default function Navbar() {
+export default function Navbar({ cartCount = 0 }) {
   const [open, setOpen] = useState(false)
   const [active, setActive] = useState('#home')
   const [scrolled, setScrolled] = useState(false)
@@ -46,6 +48,11 @@ export default function Navbar() {
             <li key={l.href}>
               <a href={l.href} className={`relative py-2 text-sm font-medium hover:text-primary-700 ${active===l.href?'text-primary-700':''}`}>
                 {l.label}
+                {l.href === '#cart' && (
+                  <span className="ml-1 inline-flex h-5 min-w-[1.25rem] items-center justify-center rounded-full bg-leaf-500 px-1.5 text-xs font-semibold text-white align-middle">
+                    {cartCount}
+                  </span>
+                )}
               </a>
             </li>
           ))}
@@ -55,7 +62,16 @@ export default function Navbar() {
         <div className="md:hidden">
           <ul className="container-px mx-auto pb-3 space-y-2">
             {links.map(l => (
-              <li key={l.href}><a href={l.href} className="block rounded-md px-3 py-2 text-sm hover:bg-primary-50">{l.label}</a></li>
+              <li key={l.href}>
+                <a href={l.href} className="flex items-center justify-between rounded-md px-3 py-2 text-sm hover:bg-primary-50">
+                  <span>{l.label}</span>
+                  {l.href === '#cart' && (
+                    <span className="inline-flex h-5 min-w-[1.25rem] items-center justify-center rounded-full bg-leaf-500 px-1.5 text-xs font-semibold text-white">
+                      {cartCount}
+                    </span>
+                  )}
+                </a>
+              </li>
             ))}
           </ul>
         </div>
