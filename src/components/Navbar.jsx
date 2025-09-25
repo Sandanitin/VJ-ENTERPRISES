@@ -37,7 +37,9 @@ export default function Navbar({ cartCount = 0 }) {
       <nav className="container-px mx-auto flex items-center justify-between py-3" aria-label="Main">
         <a href="#home" className="flex items-center gap-2">
           <img src="/favicon.svg" alt="SunRay Solar logo" className="h-8 w-8" />
-          <span className="font-semibold text-primary-700">SunRay Solar</span>
+          <span className="font-semibold text-primary-700">VJ ENTERPRISES 
+            
+          </span>
         </a>
         <button className="md:hidden p-2 rounded-md text-primary-700 hover:bg-primary-50" aria-expanded={open} onClick={() => setOpen(v=>!v)}>
           <span className="sr-only">Toggle menu</span>
