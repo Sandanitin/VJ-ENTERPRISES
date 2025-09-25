@@ -38,7 +38,7 @@ const services = [
 export default function Services() {
   return (
     <section id="services" className="relative py-16 sm:py-20">
-      <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-b from-primary-50/50 to-white" />
+      <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-b from-slate-50 to-white" />
       <div className="container-px mx-auto">
         <div className="max-w-2xl">
           <h2 className="text-2xl sm:text-3xl font-bold text-slate-800">Services</h2>

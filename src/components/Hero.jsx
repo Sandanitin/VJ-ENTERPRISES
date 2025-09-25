@@ -17,7 +17,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section id="home" className="relative pt-20 sm:pt-24">
+    <section id="home" className="relative pt-20 pb-16 sm:pt-24 sm:pb-20">
       <div className="relative overflow-hidden">
         {/* Slides */}
         <div className="absolute inset-0">

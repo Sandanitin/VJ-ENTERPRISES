@@ -15,7 +15,7 @@ export default function About() {
   ]
 
   return (
-    <section id="about" className="relative py-16 sm:py-24">
+    <section id="about" className="relative py-16 sm:py-24 bg-white">
       {/* Background aesthetics */}
       <div aria-hidden className="absolute inset-0 -z-10">
         <div className="absolute -top-24 -right-20 h-72 w-72 rounded-full bg-primary-100/50 blur-3xl" />

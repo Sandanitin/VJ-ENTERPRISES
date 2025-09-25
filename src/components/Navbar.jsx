@@ -57,9 +57,17 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden">
           <ul className="container-px mx-auto pb-3 space-y-2">
-            {links.map(l => (
-              <li key={l.href}><a href={l.href} className="block rounded-md px-3 py-2 text-sm hover:bg-primary-50">{l.label}</a></li>
-            ))}
+          {links.map(l => (
+            <li key={l.href}>
+              <a
+                href={l.href}
+                className="block rounded-md px-3 py-2 text-sm hover:bg-primary-50"
+                onClick={() => setOpen(false)}
+              >
+                {l.label}
+              </a>
+            </li>
+          ))}
           </ul>
         </div>
       )}

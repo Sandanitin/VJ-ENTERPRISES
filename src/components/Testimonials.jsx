@@ -39,7 +39,7 @@ export default function Testimonials() {
   }, [])
 
   return (
-    <section id="testimonials" className="py-16 sm:py-20 bg-gradient-to-b from-slate-50 to-white">
+    <section id="testimonials" className="py-16 sm:py-20 bg-gradient-to-b from-white to-slate-50">
       <div className="container-px mx-auto">
         <h2 className="text-2xl sm:text-3xl font-bold text-slate-800">What our customers say</h2>
 
