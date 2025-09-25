@@ -65,7 +65,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-6 flex items-center justify-center">
+        <div className="mt-6 flex flex-col items-center justify-center">
           <span className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-leaf-500 to-primary-600 px-4 py-2 text-white shadow">
             <span className="inline-flex h-4 w-4 items-center justify-center" aria-hidden>
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4"><path d="M12 21s-6.716-4.364-9.428-7.076C.86 12.212.86 8.788 2.572 7.076a5 5 0 017.072 0L12 9.432l2.356-2.356a5 5 0 017.072 7.072C18.716 16.636 12 21 12 21z"/></svg>
@@ -73,8 +73,11 @@ export default function Footer() {
             <span className="font-medium">Developed with</span>
             <span aria-hidden>❤️</span>
             <span className="font-medium">by</span>
-            <span className="font-semibold">Maniora</span>
+            <a href="https://www.maniora.in/" target="_blank" rel="noreferrer" className="font-medium underline-offset-2 hover:underline">Maniora Daggara</a>
           </span>
+          <p className="mt-2 text-[11px] text-slate-500">
+            © {new Date().getFullYear()} <a href="https://www.maniora.in/" target="_blank" rel="noreferrer" className="hover:text-primary-700">Maniora Daggara</a>
+          </p>
         </div>
       </div>
     </footer>
