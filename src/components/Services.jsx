@@ -37,7 +37,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="relative py-16 sm:py-20">
+    <section id="services" className="relative pb-20 sm:pb-24">
       <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-b from-slate-50 to-white" />
       <div className="container-px mx-auto">
         <div className="max-w-2xl">
@@ -66,7 +66,7 @@ export default function Services() {
         </div>
 
         {/* Contact CTA band */}
-        <div className="mt-10 rounded-xl bg-gradient-to-r from-leaf-500 to-primary-600 p-6 sm:p-8 text-white flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div className="rounded-xl bg-gradient-to-r from-leaf-500 to-primary-600 p-6 sm:p-8 text-white flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
             <h3 className="text-lg font-semibold">Not sure which service you need?</h3>
             <p className="text-white/90">Get a free assessment and custom proposal for your site.</p>
@@ -79,5 +79,4 @@ export default function Services() {
     </section>
   )
 }
-
 

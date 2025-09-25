@@ -17,7 +17,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section id="home" className="relative pt-20 pb-16 sm:pt-24 sm:pb-20">
+    <section id="home" className="relative pt-24 pb-0 sm:pt-28 sm:pb-0">
       <div className="relative overflow-hidden">
         {/* Slides */}
         <div className="absolute inset-0">
@@ -38,8 +38,8 @@ export default function Hero() {
         <div className="relative z-10 container-px mx-auto flex min-h-[70vh] items-center justify-center">
           <div className="text-center">
             <h1 className="text-white text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight max-w-5xl mx-auto">Clean, affordable solar for homes and businesses</h1>
-            <p className="mt-4 text-white/90 text-lg max-w-2xl mx-auto">Lower your energy bills with high‑efficiency systems designed, installed, and maintained by SunRay Solar. We handle everything—from consultation and permitting to monitoring.</p>
-            <div className="mt-6 flex items-center justify-center gap-3">
+            <p className="mt-5 text-white/90 text-lg max-w-2xl mx-auto">Lower your energy bills with high‑efficiency systems designed, installed, and maintained by SunRay Solar. We handle everything—from consultation and permitting to monitoring.</p>
+            <div className="mt-7 flex items-center justify-center gap-3">
               <a href="#contact" className="inline-flex items-center gap-2 rounded-md bg-leaf-500 hover:bg-leaf-600 text-white px-6 py-3.5 font-semibold shadow">
                 Get your free quote
               </a>

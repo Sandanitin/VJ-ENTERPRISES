@@ -15,7 +15,7 @@ export default function About() {
   ]
 
   return (
-    <section id="about" className="relative py-16 sm:py-24 bg-white">
+    <section id="about" className="relative pt-10 pb-20 sm:pt-12 sm:pb-28 bg-white">
       {/* Background aesthetics */}
       <div aria-hidden className="absolute inset-0 -z-10">
         <div className="absolute -top-24 -right-20 h-72 w-72 rounded-full bg-primary-100/50 blur-3xl" />
@@ -27,9 +27,9 @@ export default function About() {
         {/* Header */}
         <div className="max-w-3xl">
           <span className="inline-flex items-center gap-2 rounded-full bg-white/80 ring-1 ring-primary-200 px-3 py-1 text-xs font-semibold text-primary-700 shadow-sm">About us</span>
-          <h2 className="mt-3 text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">About VJ Enterprises</h2>
-          <p className="mt-3 text-slate-600">We design and deliver high‑efficiency solar and storage systems for homes and businesses. From feasibility and permitting to installation and monitoring, our in‑house team ensures performance, longevity, and a seamless customer experience.</p>
-          <div className="mt-6 flex flex-wrap items-center gap-3">
+          <h2 className="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">About VJ Enterprises</h2>
+          <p className="mt-4 text-slate-600">We design and deliver high‑efficiency solar and storage systems for homes and businesses. From feasibility and permitting to installation and monitoring, our in‑house team ensures performance, longevity, and a seamless customer experience.</p>
+          <div className="mt-7 flex flex-wrap items-center gap-3">
             <a href="#contact" className="inline-flex items-center gap-2 rounded-md bg-leaf-500 hover:bg-leaf-600 text-white px-5 py-3 font-semibold shadow">Talk to an expert</a>
             <a href="#services" className="inline-flex items-center gap-2 rounded-md bg-white/90 hover:bg-white text-primary-700 px-5 py-3 font-semibold ring-1 ring-primary-200 shadow">Explore services</a>
           </div>
@@ -40,7 +40,7 @@ export default function About() {
           <div className="grid md:grid-cols-12 gap-6 md:gap-8 items-center">
             <div className="md:col-span-8">
               <h3 className="text-xl sm:text-2xl font-bold">Our mission</h3>
-              <p className="mt-2 text-white/90">Accelerate the world’s transition to clean energy by building solar and storage systems that are safe, reliable, and delightfully simple to own.</p>
+              <p className="mt-3 text-white/90">Accelerate the world’s transition to clean energy by building solar and storage systems that are safe, reliable, and delightfully simple to own.</p>
             </div>
             <div className="md:col-span-4">
               <ul className="grid grid-cols-2 gap-3 text-sm">
@@ -54,9 +54,9 @@ export default function About() {
         </div>
 
         {/* Process steps */}
-        <div className="mt-12">
+        <div className="mt-14">
           <h3 className="text-lg sm:text-xl font-semibold text-slate-900">How we work</h3>
-          <div className="mt-5 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
               { n: '1', t: 'Consult & assess', d: 'Site assessment, bills review, and goals alignment.' },
               { n: '2', t: 'Engineer & permit', d: 'Stamped drawings, utility interconnect, AHJ approvals.' },
@@ -104,8 +104,8 @@ export default function About() {
               ))}
             </div>
 
-            <figure className="mt-6 rounded-xl bg-white p-5 shadow-sm ring-1 ring-primary-100">
-              <blockquote className="text-slate-700 text-sm sm:text-base">“The VJ team delivered on time with exceptional attention to detail. Our utility bills dropped immediately and the monitoring app is super intuitive.”</blockquote>
+            <figure className="rounded-xl bg-white p-5 shadow-sm ring-1 ring-primary-100">
+              <blockquote className="text-slate-700 text-sm sm:text-base">"The VJ team delivered on time with exceptional attention to detail. Our utility bills dropped immediately and the monitoring app is super intuitive."</blockquote>
               <figcaption className="mt-3 text-xs text-slate-500">— A happy commercial client</figcaption>
             </figure>
           </div>
@@ -135,21 +135,37 @@ export default function About() {
         </div>
 
         {/* FAQ */}
-        <div className="mt-12">
-          <h3 className="text-lg sm:text-xl font-semibold text-slate-900">Frequently asked questions</h3>
-          <div className="mt-4 divide-y divide-primary-100 rounded-xl ring-1 ring-primary-100 bg-white">
+        <div>
+          <div className="flex items-end justify-between gap-4">
+            <div>
+              <h3 className="text-lg sm:text-xl font-semibold text-slate-900">Frequently asked questions</h3>
+              <p className="mt-1 text-sm text-slate-600">Quick answers to common questions about our process, warranties, and support.</p>
+            </div>
+          </div>
+
+          <div className="mt-6 grid lg:grid-cols-2 gap-4">
             {[
               { q: 'How long does installation take?', a: 'Residential projects typically install in 1–2 days once permits are approved. Commercial timelines vary by size and interconnection requirements.' },
               { q: 'What warranties do you provide?', a: 'We include 25‑year panel and production warranties with workmanship coverage. Batteries and inverters follow manufacturer terms.' },
               { q: 'Do you handle incentives and permits?', a: 'Yes. We manage all permitting, interconnection, and applicable incentives or rebates as part of our turn‑key delivery.' },
               { q: 'How does monitoring work?', a: 'Our smart app provides real‑time production and consumption data with alerting and remote diagnostics.' },
-            ].map(item => (
-              <details key={item.q} className="group px-5 py-4">
-                <summary className="cursor-pointer list-none font-medium text-slate-800 flex items-center justify-between">
-                  {item.q}
-                  <span className="ml-3 text-primary-600 group-open:rotate-180 transition-transform">⌄</span>
+            ].map((item, idx) => (
+              <details
+                key={item.q}
+                className="group rounded-xl bg-white/80 backdrop-blur px-4 sm:px-5 py-3 sm:py-4 shadow-sm ring-1 ring-primary-100 hover:shadow transition">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-3">
+                  <div className="flex items-center gap-3 min-w-0">
+                    <span className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary-50 ring-1 ring-primary-200 text-primary-700 text-xs font-bold">
+                      {idx + 1}
+                    </span>
+                    <span className="truncate font-medium text-slate-900">{item.q}</span>
+                  </div>
+                  <span className="ml-2 inline-flex h-7 w-7 items-center justify-center rounded-md bg-white text-primary-600 ring-1 ring-primary-200 transition-transform group-open:rotate-180">⌄</span>
                 </summary>
-                <p className="mt-2 text-sm text-slate-600">{item.a}</p>
+
+                <div className="mt-3 border-t border-primary-100 pt-3 text-sm text-slate-700 opacity-0 translate-y-1 transition-all duration-200 ease-out group-open:opacity-100 group-open:translate-y-0">
+                  {item.a}
+                </div>
               </details>
             ))}
           </div>
@@ -158,6 +174,5 @@ export default function About() {
     </section>
   )
 }
-
 
 

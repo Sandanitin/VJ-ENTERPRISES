@@ -39,12 +39,12 @@ export default function Testimonials() {
   }, [])
 
   return (
-    <section id="testimonials" className="py-16 sm:py-20 bg-gradient-to-b from-white to-slate-50">
+    <section id="testimonials" className="pb-20 sm:pb-24 bg-gradient-to-b from-white to-slate-50">
       <div className="container-px mx-auto">
         <h2 className="text-2xl sm:text-3xl font-bold text-slate-800">What our customers say</h2>
 
         <div
-          className="mt-8"
+          className="mt-4"
           role="region"
           aria-roledescription="carousel"
           aria-label="Testimonials"
@@ -66,7 +66,7 @@ export default function Testimonials() {
             </div>
           </article>
 
-          <div className="mt-4 flex items-center justify-between">
+          <div className="mt-5 flex items-center justify-between">
             <button
               className="rounded-md border border-slate-200 px-3 py-2 text-sm hover:bg-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-300"
               onClick={prev}
